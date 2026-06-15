@@ -1,0 +1,39 @@
+how to rerun failed tests:
+--retries=n     (n can be any integer:1,2,3,...)
+or in playwright.config.js at line 21 we cange 0 to n
+
+for report:
+reporter: [
+    ['html',{outputFolder : 'My-Report', open : 'always'}]
+], this line update in playwright.config.js
+open : always,never,on-failure
+
+terminal reports: dot , line , list
+reporter: [
+    ['dot],
+    ['html',{outputFolder : 'My-Report', open : 'always'}]
+],
+reporter: [
+    ['list'],
+    ['html',{outputFolder : 'My-Report', open : 'always'}]
+],
+json report:
+reporter: [
+    ['list'],
+    ['html',{outputFolder : 'My-Report', open : 'always'}]
+    ['json',{outputFile : 'my-report-json'}],
+],
+junit report:
+reporter: [
+    ['list'],
+    ['html',{outputFolder : 'My-Report', open : 'always'}]
+    ['json',{outputFile : 'my-report.json'}],
+    ['junit',{outputFile : 'my-result.xml'}]
+],
+
+allure report:
+npm install -D allure-playwright  =>execute this command in terminal and then
+add this line in .config.js in reporter: ['allure-playwright'],
+after adding that line and runned then allure report comes but in json format not in human language
+allure generate allure-results --clean -o allure-report
+then it run command:allure open allure-report

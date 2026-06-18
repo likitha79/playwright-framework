@@ -1,6 +1,2 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="11.776482">
-<testsuite name="Input_radiobuttons.spec.js" timestamp="2026-06-13T15:08:52.472Z" hostname="chromium" tests="1" failures="0" skipped="0" time="10.668" errors="0">
-<testcase name="Radio Buttons" classname="Input_radiobuttons.spec.js" time="10.668">
-</testcase>
-</testsuite>
+<testsuites id="" name="" tests="0" failures="0" skipped="0" errors="0" time="0.24430100000000005">
 </testsuites>

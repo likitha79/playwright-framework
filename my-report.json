@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "C:\\Users\\likit\\OneDrive\\playwright_automation\\playwright.config.js",
-    "rootDir": "C:/Users/likit/OneDrive/playwright_automation/tests",
+    "configFile": "D:\\playwright-framework_demo\\playwright.config.js",
+    "rootDir": "D:/playwright-framework_demo/tests",
     "forbidOnly": false,
     "fullyParallel": true,
     "globalSetup": null,
@@ -10,21 +10,17 @@
     "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
-    "metadata": {
-      "actualWorkers": 1
-    },
+    "metadata": {},
     "preserveOutput": "always",
     "projects": [
       {
-        "outputDir": "C:/Users/likit/OneDrive/playwright_automation/test-results",
+        "outputDir": "D:/playwright-framework_demo/test-results",
         "repeatEach": 1,
         "retries": 0,
-        "metadata": {
-          "actualWorkers": 1
-        },
+        "metadata": {},
         "id": "chromium",
         "name": "chromium",
-        "testDir": "C:/Users/likit/OneDrive/playwright_automation/tests",
+        "testDir": "D:/playwright-framework_demo/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -32,15 +28,13 @@
         "timeout": 30000
       },
       {
-        "outputDir": "C:/Users/likit/OneDrive/playwright_automation/test-results",
+        "outputDir": "D:/playwright-framework_demo/test-results",
         "repeatEach": 1,
         "retries": 0,
-        "metadata": {
-          "actualWorkers": 1
-        },
+        "metadata": {},
         "id": "firefox",
         "name": "firefox",
-        "testDir": "C:/Users/likit/OneDrive/playwright_automation/tests",
+        "testDir": "D:/playwright-framework_demo/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -48,15 +42,13 @@
         "timeout": 30000
       },
       {
-        "outputDir": "C:/Users/likit/OneDrive/playwright_automation/test-results",
+        "outputDir": "D:/playwright-framework_demo/test-results",
         "repeatEach": 1,
         "retries": 0,
-        "metadata": {
-          "actualWorkers": 1
-        },
+        "metadata": {},
         "id": "webkit",
         "name": "webkit",
-        "testDir": "C:/Users/likit/OneDrive/playwright_automation/tests",
+        "testDir": "D:/playwright-framework_demo/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -90,7 +82,7 @@
         }
       ],
       [
-        "C:\\Users\\likit\\OneDrive\\playwright_automation\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        "D:\\playwright-framework_demo\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
         null
       ]
     ],
@@ -106,55 +98,23 @@
     "workers": 6,
     "webServer": null
   },
-  "suites": [
+  "suites": [],
+  "errors": [
     {
-      "title": "Input_radiobuttons.spec.js",
-      "file": "Input_radiobuttons.spec.js",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Radio Buttons",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 10668,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-06-13T15:08:53.121Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "13e5730ca041131e110c-7603765a63a43985c08f",
-          "file": "Input_radiobuttons.spec.js",
-          "line": 37,
-          "column": 6
-        }
-      ]
+      "message": "Error: Cannot find module 'firebase/firestore/pipelines'\nRequire stack:\n- D:\\playwright-framework_demo\\tests\\Annotations.spec.js\n- D:\\playwright-framework_demo\\node_modules\\playwright\\lib\\transform\\transform.js\n- D:\\playwright-framework_demo\\node_modules\\playwright\\lib\\common\\configLoader.js\n- D:\\playwright-framework_demo\\node_modules\\playwright\\lib\\testActions.js\n- D:\\playwright-framework_demo\\node_modules\\playwright\\lib\\program.js\n- D:\\playwright-framework_demo\\node_modules\\@playwright\\test\\cli.js",
+      "stack": "Error: Cannot find module 'firebase/firestore/pipelines'\nRequire stack:\n- D:\\playwright-framework_demo\\tests\\Annotations.spec.js\n- D:\\playwright-framework_demo\\node_modules\\playwright\\lib\\transform\\transform.js\n- D:\\playwright-framework_demo\\node_modules\\playwright\\lib\\common\\configLoader.js\n- D:\\playwright-framework_demo\\node_modules\\playwright\\lib\\testActions.js\n- D:\\playwright-framework_demo\\node_modules\\playwright\\lib\\program.js\n- D:\\playwright-framework_demo\\node_modules\\@playwright\\test\\cli.js\n    at Object.<anonymous> (D:\\playwright-framework_demo\\tests\\Annotations.spec.js:13:17)",
+      "location": {
+        "file": "D:\\playwright-framework_demo\\tests\\Annotations.spec.js",
+        "column": 17,
+        "line": 13
+      },
+      "snippet": "\u001b[90m   at \u001b[39mAnnotations.spec.js:13\n\n\u001b[0m \u001b[90m 11 |\u001b[39m\n \u001b[90m 12 |\u001b[39m \u001b[36mconst\u001b[39m { test\u001b[33m,\u001b[39m expect} \u001b[33m=\u001b[39m require(\u001b[32m'@playwright/test'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m \u001b[36mconst\u001b[39m { exp } \u001b[33m=\u001b[39m require(\u001b[32m'firebase/firestore/pipelines'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 14 |\u001b[39m\n \u001b[90m 15 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'Google Search Tests'\u001b[39m\u001b[33m,\u001b[39m()\u001b[33m=>\u001b[39m{\n \u001b[90m 16 |\u001b[39m\u001b[0m"
     }
   ],
-  "errors": [],
   "stats": {
-    "startTime": "2026-06-13T15:08:52.452Z",
-    "duration": 11776.482,
-    "expected": 1,
+    "startTime": "2026-06-18T15:17:44.502Z",
+    "duration": 244.30100000000004,
+    "expected": 0,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

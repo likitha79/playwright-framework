@@ -37,3 +37,37 @@ add this line in .config.js in reporter: ['allure-playwright'],
 after adding that line and runned then allure report comes but in json format not in human language
 allure generate allure-results --clean -o allure-report
 then it run command:allure open allure-report
+
+login into github then download git for windows, after downloading to check go to VS and run command :git --version
+git config --global user.name "Likitha"
+git config --global user.email "likithatatineni7@gmail.com"
+git config --list// this gives list of username,email, why this coz it gives true such that username and email are corect for verification, to come out of that click Q
+after these 3 commands go to github and create new repository with name and description.. this is like a folder in github to push our codes
+execute this command:git init(this connects local project to git)
+git remote add origin https://github.com/likitha79/playwright-framework
+git add .(this command will add all the files in project to git staging area-(gits waiting room or loading) ) or only particular file to send to staging area then command is : git add tests/example.spec.js(for example) or particular folder git add tests/
+git commit -m "Initial Playwright framework upload"(commit is imp and it is there to save something like control S, here -m is message)
+In vs at left down if you is master rather than main then you should run this command: git branch -M main
+pushing local changes to github: command is=>git push -u origin main
+
+git clone- Downloads a project from github to local machine
+git init- initializes git in a project add starts version control
+git commit- saves a snapshot of staged changes
+git push-sends local commits to github
+A new tester wants the files to do same project then it extract all files and tests that are already done by this command : in D drive:  git clone url(git clone https://github.com/likitha79/playwright-framework )
+this cloning gives only code inside those files but not dependencies: for those dependencies in terminal : npm install
+  npx playwright install , after these 2 commands just to test is it working the command is: npx playwright test
+that new tester can see U,M that means:M means modifies present already in git whereas U is newly created this doesnt know by git
+after clone should run this command: git status(this gives what is modifies,what is untracked)
+after that files should go to staging by git add. then commit: git commit -m"added new test for demo"
+and final step is: git push origin main
+
+tester A need some code from tester B folder then:
+run command: git status(if it says it is upto date then it means no need to push and only required to do is fetch)(git status shows the current state of files in the project)
+to fetch: git fetch(checking for new changes in github without updating files )
+to pull: git pull(bring latest changes from github  to local project)
+
+imp:git is local(downloading) and github is online(should have account)
+
+branch: it is the other copy of your code, it helps to work on that without actually disturbing or affecting main code
+to know branches available => git branch

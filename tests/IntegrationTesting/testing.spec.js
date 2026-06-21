@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 test('Launch The Browser', async ({ page }) => {
   await page.goto('https://www.saucedemo.com/');
   await expect(page).toHaveTitle('Swag Labs');
-  await expect(page).toHaveURL('https://www.saucedemo.com/');
+  await expect(page).toHaveURL('https://www.saucedemo.com/Engineer A');
 
   const logo = page.locator('.login_logo');
   await expect(logo).toBeVisible();

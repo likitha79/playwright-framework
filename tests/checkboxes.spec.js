@@ -33,7 +33,7 @@ test("CheckBoxes", async({page})=>
 
 });
 
-test.only('Amazon Checkbox Validation', async({page})=>
+test('Amazon Checkbox Validation', async({page})=>
 {
     await page.goto("https://www.amazon.in/");
     

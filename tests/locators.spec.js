@@ -26,7 +26,7 @@ test.skip('Locators practice2', async({page})=>{
 
 
 
-test.only('Locators Practice 3', async({page})=>{
+test('Locators Practice 3', async({page})=>{
     await page.goto("https://www.saucedemo.com/");
     await page.locator("#user-name").fill("standard_user");
     await page.locator("input[type='password']").fill("secret_sauce");

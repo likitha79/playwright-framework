@@ -71,3 +71,13 @@ imp:git is local(downloading) and github is online(should have account)
 
 branch: it is the other copy of your code, it helps to work on that without actually disturbing or affecting main code
 to know branches available => git branch
+
+git log --oneline =>gives u the test cases code so that we can cherry pick by that code
+git checkout main
+git cherry-pick code  (adds that case to main)
+
+to rebase:(when our branches doesnot have all info available to main then we rebase)
+git checkout feature/my-branch
+git fetch origin
+git rebase origin/main
+git push --force

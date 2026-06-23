@@ -90,4 +90,10 @@ test('Test Case 3', async ({ page }) => {
   await expect(page).toHaveURL('https://www.saucedemo.com/');
 })
 
+test('Test Case 4', async ({ page }) => {
+  await page.goto('https://www.saucedemo.com/');
+  await expect(page).toHaveTitle('Swag Labs');
+  await expect(page).toHaveURL('https://www.saucedemo.com/');
+})
+
 

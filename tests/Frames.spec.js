@@ -36,7 +36,7 @@ test('Handling frames',async({page})=>{
     await expect(frame3.locator("h1")).toHaveText("Right");
 })
 
-test.only("Nested frames",async({page})=>{
+test("Nested frames",async({page})=>{
     await page.goto("https://play1.automationcamp.ir/frames.html",{timeout:60000, waitUntil:'domcontentloaded'});
 
     const parentframe = page.frameLocator("#frame1");  //page.frame({name:'nameofframe'})

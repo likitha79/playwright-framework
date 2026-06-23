@@ -34,7 +34,7 @@ test('Input Box Error Msg',async({page})=>
     
 });
 
-test.only('Radio Buttons',async({page})=>
+test('Radio Buttons',async({page})=>
 {
     await page.goto('https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php');
     await page.locator('#headingOne .accordion-button.collapsed').click();

@@ -10,7 +10,7 @@ test.slow=marks a test as slow, running a slow test(eg heavy UI interactions)
 test.fail= marking a known bug as expected to fail */
 
 const { test, expect} = require('@playwright/test');
-const { exp } = require('firebase/firestore/pipelines');
+
 
 test.describe('Google Search Tests',()=>{
 
